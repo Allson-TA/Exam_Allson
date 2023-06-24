@@ -17,8 +17,13 @@ public class AgesDemo {
 		}
 		System.out.println(max);
 		
-
+		for(int x : ages) {
+			max = x;
+		}
+		System.out.println(max);
 		
+		Arrays.stream(ages).max();
+		System.out.println(max);
 	}
 
 }
